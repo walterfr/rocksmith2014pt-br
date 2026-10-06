@@ -4,6 +4,10 @@ Projeto de tradução colaborativa do **Rocksmith 2014 Remastered (PC/Steam)** p
 
 Este projeto traduziu mais de 20.000 linhas de texto, menus, missões, lições e modos de jogo (incluindo o Guitarcade, Score Attack, Riff Repeater e menus de afinação) para o nosso idioma, além de adaptar os termos musicais para o contexto correto (como *bend*, *hammer-on*, *pull-off*, *palhetada*, *escala* e afins).
 
+## 🆕 Versão mais recente
+
+A versão [v1.0.1](https://github.com/walterfr/rocksmith2014pt-br/releases/tag/v1.0.1) inclui uma revisão de textos da interface, dos menus e dos tutoriais, com ajustes de clareza e consistência em PT-BR.
+
 ## 📥 Como Instalar
 
 A forma mais fácil de instalar a tradução é baixar o arquivo já compilado (`cache.psarc`) na aba de Releases do GitHub.

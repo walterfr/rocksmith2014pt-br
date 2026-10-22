@@ -24,11 +24,11 @@ A estrutura das colunas é:
 2. **Inglês (Original):** `You can't play [game name]...`
 3. **Francês:** (mantido idêntico ao original)
 4. **Tradução PT-BR:** (substitui o slot do Espanhol)
-5. **Alemão:** (mantido idêntico ao original)
-6. **Italiano:** (mantido idêntico ao original)
+5. **Italiano:** (mantido idêntico ao original)
+6. **Alemão:** (mantido idêntico ao original)
 7. **Japonês:** (mantido idêntico ao original)
-8. **Espanhol Original / Outros:** (mantido idêntico ao original)
-9. **Outros:** (mantido idêntico ao original)
+8. **Coluna extra do jogo:** (conteúdo interno; mantido idêntico ao original)
+9. **Vazia:** (mantida vazia)
 
 ---
 

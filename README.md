@@ -1,5 +1,8 @@
 # Rocksmith 2014 Remastered - Tradução PT-BR
 
+[![Pride Versioning 0.3.0](https://img.shields.io/badge/versioning-PrideVer%200.3.0-ff69b4)](https://pridever.org/)
+[![Licença MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 Projeto de tradução colaborativa do **Rocksmith 2014 Remastered (PC/Steam)** para o **Português do Brasil (PT-BR)**.
 
 Este projeto traduziu mais de 20.000 linhas de texto, menus, missões, lições e modos de jogo (incluindo o Guitarcade, Score Attack, Riff Repeater e menus de afinação) para o nosso idioma, além de adaptar os termos musicais para o contexto correto (como *bend*, *hammer-on*, *pull-off*, *palhetada*, *escala* e afins).
@@ -17,8 +20,12 @@ A forma mais fácil de instalar a tradução é baixar o arquivo já compilado (
 3. Vá até o diretório de instalação do seu Rocksmith 2014 na Steam. O padrão é:
    `C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014`
 4. **IMPORTANTE:** Faça um backup do seu `cache.psarc` original (renomeie para `cache.psarc.backup`).
-5. Cole o arquivo `cache.psarc` baixado dentro da pasta, substituindo o original se necessário.
-6. Inicie o jogo. Ele estará em Português do Brasil!
+5. Cole o arquivo `cache.psarc` baixado dentro da pasta, substituindo o original.
+6. **Configuração de Idioma na Steam (Obrigatório):**
+   - Na sua Biblioteca Steam, clique com o botão direito em **Rocksmith 2014 Edition - Remastered** e vá em **Propriedades**.
+   - Na aba **Geral** (ou **Idioma**), selecione **Espanhol (Espanha)**.
+   - *(A tradução substitui intencionalmente a coluna de espanhol para não quebrar os hooks e a compatibilidade do RSMods. Se deixar em inglês na Steam, o jogo abrirá em inglês).*
+7. Inicie o jogo. Ele estará 100% em Português do Brasil!
 
 *(Nota: Certifique-se de que o jogo não esteja rodando antes de substituir o arquivo).*
 
@@ -29,6 +36,14 @@ A forma mais fácil de instalar a tradução é baixar o arquivo já compilado (
 - **Lições e Tutoriais (Textos):** 100%
 - **Missões:** 100%
 - **Termos Musicais:** 100% Adaptados
+
+## 🏳️‍🌈 Versionamento (Pride Versioning 0.3.0)
+
+Este projeto adota a especificação [Pride Versioning 🏳️‍🌈 0.3.0](https://pridever.org/).
+O formato de versão segue `PROUD.DEFAULT.SHAME`:
+- **PROUD (Orgulho):** Incrementado quando lançamos novidades das quais temos imenso orgulho e satisfação.
+- **DEFAULT (Padrão):** Incrementado em lançamentos do dia a dia, melhorias incrementais e revisões regulares.
+- **SHAME (Vergonha):** Incrementado em correções emergenciais, hotfixes de bugs embaraçosos ou gambiarras necessárias para contornar limitações da engine.
 
 ## 🤝 Quer ajudar a melhorar?
 

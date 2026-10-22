@@ -2,50 +2,65 @@
 
 Bem-vindo! Toda ajuda para lapidar a tradução do Rocksmith 2014 para o Português do Brasil é super bem-vinda. Se você encontrou algum texto que ficou esquisito, não coube na tela, ou possui um erro de tradução musical (ex: traduziram "play" como "jogar" no meio de uma frase musical), veja como é fácil consertar.
 
+---
+
+## 🏳️‍🌈 Versionamento (Pride Versioning 0.3.0)
+
+Este projeto adota o [Pride Versioning 0.3.0](https://pridever.org/).
+O formato das versões segue `PROUD.DEFAULT.SHAME`:
+- **PROUD (Orgulho):** Avanços substanciais que elevam a qualidade da tradução.
+- **DEFAULT (Padrão):** Contribuições do dia a dia, melhorias incrementais e revisões de frases.
+- **SHAME (Vergonha):** Correções de bugs embaraçosos, termos bizarros que escaparam ou correções de emergência.
+
+---
+
 ## Como os textos são estruturados
 
 O jogo armazena todos os seus textos no arquivo `maingame.csv`. 
-O arquivo não tem cabeçalho e cada linha possui 9 colunas no total. 
+O arquivo não tem cabeçalho e cada linha possui 9 colunas no total (8 vírgulas delimitadoras).
 
-A estrutura simplificada das colunas é:
+A estrutura das colunas é:
 1. **ID do texto:** Ex: `6506`
-2. **Inglês (Original):** Ex: `You can't play [game name]...`
-3. Vazio
-4. **Tradução:** (Na verdade é a coluna que o jogo lê quando configurado para espanhol/outro idioma europeu e que usamos para colocar o PT-BR). Ex: `Você não pode jogar [game name]...`
-5. Vazio
-6. Vazio
-7. Outros idiomas...
-8. Outros idiomas...
-9. Outros idiomas...
+2. **Inglês (Original):** `You can't play [game name]...`
+3. **Francês:** (mantido idêntico ao original)
+4. **Tradução PT-BR:** (substitui o slot do Espanhol)
+5. **Alemão:** (mantido idêntico ao original)
+6. **Italiano:** (mantido idêntico ao original)
+7. **Japonês:** (mantido idêntico ao original)
+8. **Espanhol Original / Outros:** (mantido idêntico ao original)
+9. **Outros:** (mantido idêntico ao original)
 
-## Regras de Tradução e Formatação
+---
 
-1. **NÃO altere textos entre colchetes `[...]` ou chaves `{...}`:** 
-   O Rocksmith utiliza variáveis internas como `[game name]`, `[player name]`, `[#Key]` e tags de formatação como `{C}`, `{L}`, `{X}`. Eles **precisam ser mantidos em inglês e exatamente como no original**, caso contrário o jogo **trava (crash)** na tela de loading ou menus.
-2. **Termos técnicos:** Mantenha nomes de técnicas universais em inglês quando fizer sentido (ex: *Hammer-on*, *Pull-off*, *Bend*, *Palm Mute*, *Slide*). Não traduza para "martelo" ou "fazer curva".
-3. **Comprimento:** Tente não escrever frases muito maiores que o original em inglês (máximo de 30% a 40% maior), pois o texto pode ser cortado na interface do jogo.
+## Regras Críticas de Tradução (Evite Crashes!)
+
+1. **PROIBIDO VÍRGULAS NA COLUNA DA TRADUÇÃO:**
+   A engine do Rocksmith 2014 usa `split(',')` ingênuo. Qualquer vírgula adicional desloca as colunas para o idioma vizinho e **trava o jogo no carregamento do perfil**. Substitua vírgulas por espaços ou reformule a frase.
+2. **NUNCA use aspas duplas (`"`):**
+   Use apenas aspas simples (`'`). Aspas duplas forçam geradores de CSV a colocar delimitadores que quebram o leitor da engine.
+3. **NÃO altere textos entre colchetes `[...]` ou chaves `{...}`:** 
+   O Rocksmith utiliza variáveis internas como `[game name]`, `[player name]`, `[#Key]` e tags de formatação como `{C}`, `{L}`, `{X}`, `{pad:a}`. Eles **precisam ser mantidos exatamente como no original**, caso contrário o jogo trava.
+4. **Termos musicais técnicos:** Mantenha nomes de técnicas universais em inglês quando for a convenção brasileira (*Hammer-on*, *Pull-off*, *Bend*, *Palm Mute*, *Slide*, *Tapping*).
+5. **Comprimento:** Tente não escrever frases excessivamente longas para não estourar caixas de diálogo na interface.
+
+Consulte o arquivo [AGENTS.md](AGENTS.md) para detalhes técnicos de arquitetura e empacotamento.
+
+---
 
 ## Como Enviar uma Correção
 
-### Método Fácil (Via GitHub no Navegador)
+### Método Fácil (Via Navegador no GitHub)
 
 1. Vá até o arquivo [`maingame.csv`](maingame.csv) neste repositório.
 2. Clique no ícone de "Lápis" (Edit this file).
-3. Use `Ctrl+F` (ou o campo de busca) para encontrar a frase errada que você viu no jogo.
-4. Mude **apenas** o texto na 4ª coluna (a nossa coluna PT-BR).
-5. Desça a página até o "Commit changes...".
-6. Escreva um título curto sobre o que você arrumou (ex: `Corrigido erro na frase do Guitarcade`).
-7. Clique em **Propose changes** e crie o **Pull Request**.
+3. Use `Ctrl+F` para localizar a frase que deseja corrigir.
+4. Altere **apenas** o texto da 4ª coluna (PT-BR), garantindo que **não adicionou vírgulas nem aspas duplas**.
+5. Crie uma nova branch e abra o **Pull Request**.
 
-Assim que revisarmos a correção e virmos que as tags do jogo continuam intactas, a sua correção será aceita!
+### Método Avançado (Testando Localmente no Jogo)
 
-### Método Avançado (Para quem quer testar no próprio jogo)
-
-Se você entende de modding do Rocksmith 2014, pode usar o arquivo `maingame.csv` localmente:
-1. Faça um *fork* deste repositório e clone no seu PC.
-2. Edite o `maingame.csv` localmente com uma ferramenta que não destrua as quebras de linha (`\r\n`), como VS Code, Notepad++ ou ferramentas de planilhas configuradas corretamente.
-3. Descompacte o seu `cache.psarc` original usando ferramentas como a `Rocksmith2014PsarcLib` e `7-zip`.
-4. Substitua o `maingame.csv` dentro de `cache4.7z -> localization`.
-5. Reempacote o `cache4.7z` **obrigatoriamente usando o método Store (sem compressão ou `-mx=0`)**, senão o jogo travará na tela de *loading* ou nos perfis.
-6. Reempacote o `cache.psarc` e jogue para testar.
-7. Se funcionou e ficou bom, crie um **Pull Request** no GitHub com o seu arquivo `maingame.csv` modificado!
+1. Faça um fork e clone o repositório.
+2. Edite o `maingame.csv` localmente.
+3. Use o procedimento documentado em [AGENTS.md](AGENTS.md) (in-place update com `7z u cache4.7z localization\maingame.csv -m0=lzma:d=23`).
+4. Execute `rebuild_and_deploy_perfect.ps1` e teste dentro do Rocksmith 2014.
+5. Se aprovado, abra o Pull Request!

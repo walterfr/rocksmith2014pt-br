@@ -75,3 +75,14 @@ with open('work/maingame.csv', 'r', encoding='utf-8') as f:
     assert len(text.splitlines()) == 20143, "Erro: Contagem de linhas incorreta!"
 print("CSV 100% íntegro e seguro para a engine!")
 ```
+
+---
+
+## 5. Convenção de Versionamento: Pride Versioning 0.3.0
+
+O projeto segue a especificação [Pride Versioning 🏳️‍🌈 0.3.0](https://pridever.org/):
+Formato: `PROUD.DEFAULT.SHAME`
+- **PROUD (1º número):** Incrementado em grandes avanços e marcos de qualidade técnica/musical que geram profundo orgulho.
+- **DEFAULT (2º número):** Incrementado em revisões de texto rotineiras, melhorias comuns de vocabulário e atualizações do dia a dia.
+- **SHAME (3º número):** Incrementado em hotfixes emergenciais, correções de bugs embaraçosos de tradução ou contornos para travamentos da engine.
+Ao criar tags e releases (`v<P>.<D>.<S>`), nomeie claramente o motivo no release notes.

@@ -9,7 +9,7 @@ Este projeto traduziu mais de 20.000 linhas de texto, menus, missões, lições 
 
 ## 🆕 Versão mais recente
 
-A versão [v1.0.1](https://github.com/walterfr/rocksmith2014pt-br/releases/tag/v1.0.1) inclui uma revisão de textos da interface, dos menus e dos tutoriais, com ajustes de clareza e consistência em PT-BR.
+A versão [v1.1.0](https://github.com/walterfr/rocksmith2014pt-br/releases/tag/v1.1.0) adota o Pride Versioning 0.3.0 e traz a correção de mais de 170 aberrações de tradução automática nos tutoriais e lições (palhetas, tapping, nomes de cordas, pestana e refinamento de termos PT-BR).
 
 ## 📥 Como Instalar
 

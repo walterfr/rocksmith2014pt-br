@@ -9,7 +9,7 @@ Este projeto traduziu mais de 20.000 linhas de texto, menus, missões, lições 
 
 ## 🆕 Versão mais recente
 
-A versão [v1.2.0](https://github.com/walterfr/rocksmith2014pt-br/releases/tag/v1.2.0) traz uma grande revisão técnica e musical: restauração de todos os acordes/afinações com ♭ e ♯, correção de termos bizarros das lições (casas, braço, dedilhado, palm mute, compasso) e naturalização de verbos e pronomes em PT-BR.
+A versão [v2.0.0](https://github.com/walterfr/rocksmith2014pt-br/releases/tag/v2.0.0) consolida a **Super Varredura Definitiva de Música e PT-BR** (mais de 3.000 linhas refinadas): eliminação total de traduções literais em jargões de guitarra/baixo (*headstock*, *tarraxa*, *escala*, *traste/casa*, *captador*, *cordal*, *pestana*, *palm mute*, *bend*, *pull-off*, *slap & pop*, *sustain*, *timbre*, *valvulado*, *gabinete*, *chorus*, *plate reverb*, *conector P10*), correção de todas as alucinações em CAIXA ALTA de interface e Soundcheck, e padronização estrita para o Português do Brasil (Acordo Ortográfico, ordinais `1º`/`2ª` e tratamento em `você`).
 
 ## 📥 Como Instalar
 

@@ -9,7 +9,10 @@ Este projeto traduziu mais de 20.000 linhas de texto, menus, missões, lições 
 
 ## 🆕 Versão mais recente
 
-A versão [v2.0.0](https://github.com/walterfr/rocksmith2014pt-br/releases/tag/v2.0.0) consolida a **Super Varredura Definitiva de Música e PT-BR** (mais de 3.000 linhas refinadas): eliminação total de traduções literais em jargões de guitarra/baixo (*headstock*, *tarraxa*, *escala*, *traste/casa*, *captador*, *cordal*, *pestana*, *palm mute*, *bend*, *pull-off*, *slap & pop*, *sustain*, *timbre*, *valvulado*, *gabinete*, *chorus*, *plate reverb*, *conector P10*), correção de todas as alucinações em CAIXA ALTA de interface e Soundcheck, e padronização estrita para o Português do Brasil (Acordo Ortográfico, ordinais `1º`/`2ª` e tratamento em `você`).
+A versão [v2.1.0](https://github.com/walterfr/rocksmith2014pt-br/releases/tag/v2.1.0) unifica o trabalho da comunidade:
+- Incorporação da massiva revisão de **~15.600 linhas** (reescrita natural de lições, tutoriais, falas do narrador e descrições técnicas) contribuída pelo usuário do Reddit através do [canal da comunidade](https://www.reddit.com/c/chat6Q1gmF2c/s/66LYTlpMI5).
+- Restauração de nomes oficiais de equipamentos, pedais, modelos de guitarras e marcas (*Marshall*, *Orange*, *Epiphone*, *Gibson*, *Rocksmith*, *Guitarcade*).
+- Refinamento de terminologias e correções cirúrgicas de jargões musicais (*headstock*, *pino da correia*, *corda solta*, *FUNK DE ESTÚDIO*, zonas de afinação).
 
 ## 📥 Como Instalar
 

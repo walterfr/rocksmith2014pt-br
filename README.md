@@ -10,7 +10,7 @@ Este projeto traduziu mais de 20.000 linhas de texto, menus, missões, lições 
 ## 🆕 Versão mais recente
 
 A versão [v2.1.0](https://github.com/walterfr/rocksmith2014pt-br/releases/tag/v2.1.0) unifica o trabalho da comunidade:
-- Incorporação da massiva revisão de **~15.600 linhas** (reescrita natural de lições, tutoriais, falas do narrador e descrições técnicas) contribuída pelo usuário do Reddit através do [canal da comunidade](https://www.reddit.com/c/chat6Q1gmF2c/s/66LYTlpMI5).
+- Incorporação da massiva revisão de **~15.600 linhas** (reescrita natural de lições, tutoriais, falas do narrador e descrições técnicas) contribuída pelo usuário [LoadedWaif (u/LongjumpingLimit9141)](https://www.reddit.com/user/LongjumpingLimit9141/) no Reddit.
 - Restauração de nomes oficiais de equipamentos, pedais, modelos de guitarras e marcas (*Marshall*, *Orange*, *Epiphone*, *Gibson*, *Rocksmith*, *Guitarcade*).
 - Refinamento de terminologias e correções cirúrgicas de jargões musicais (*headstock*, *pino da correia*, *corda solta*, *FUNK DE ESTÚDIO*, zonas de afinação).
 
